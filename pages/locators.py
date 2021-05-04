@@ -22,3 +22,4 @@ class ProductPageLocators():
     COST_BASCKET=(By.CSS_SELECTOR,"div.alertinner>p>strong")
     NAME_BOOK=(By.CSS_SELECTOR,"div.product_main>h1")
     COST_BOOK=(By.CSS_SELECTOR,"p.price_color")
+    SUCCESS_MESSAGE=(By.CSS_SELECTOR,"")

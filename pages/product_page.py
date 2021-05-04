@@ -29,4 +29,9 @@ class ProductPage(BasePage):
     def coast_basket(self):
         coast_baske_message=self.browser.find_element(*ProductPageLocators.COST_BASCKET)
         return coast_baske_message.text
+   
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.MESSAGE_ADD_BOOK), "Success message is presented, but should not be"
 
+    def disappearing_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.MESSAGE_ADD_BOOK), "Success message is presented, but should not be"
