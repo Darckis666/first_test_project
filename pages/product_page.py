@@ -1,7 +1,6 @@
 from .base_page import BasePage
-from selenium.webdriver.common.by import By
 from .locators import ProductPageLocators
-from .login_page import LoginPage
+
 
 class ProductPage(BasePage):
     def add_product_button(self):
